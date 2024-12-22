@@ -1,0 +1,103 @@
+<div>
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <style>
+            body {
+                background-color: #f8f9fa;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+            }
+    
+            .login-container {
+                max-width: 400px;
+                padding: 30px;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+    
+            .login-header {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+    
+            .login-header img {
+                width: 100px;
+                height: 100px;
+                object-fit: contain;
+                margin-bottom: 10px;
+            }
+    
+            .login-header h2 {
+                margin-bottom: 0;
+                font-weight: bold;
+                color: #343a40;
+            }
+    
+            .form-group {
+                margin-bottom: 1.5rem;
+            }
+    
+            .form-control {
+                border-radius: 50px;
+            }
+    
+            .btn-login {
+                width: 100%;
+                border-radius: 50px;
+                padding: 10px;
+            }
+    
+            .text-center {
+                margin-top: 20px;
+            }
+    
+            .text-center a {
+                color: #007bff;
+            }
+        </style>
+    <!-- Livewire Styles --><style >[wire\:loading][wire\:loading], [wire\:loading\.delay][wire\:loading\.delay], [wire\:loading\.inline-block][wire\:loading\.inline-block], [wire\:loading\.inline][wire\:loading\.inline], [wire\:loading\.block][wire\:loading\.block], [wire\:loading\.flex][wire\:loading\.flex], [wire\:loading\.table][wire\:loading\.table], [wire\:loading\.grid][wire\:loading\.grid], [wire\:loading\.inline-flex][wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.none][wire\:loading\.delay\.none], [wire\:loading\.delay\.shortest][wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter][wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short][wire\:loading\.delay\.short], [wire\:loading\.delay\.default][wire\:loading\.delay\.default], [wire\:loading\.delay\.long][wire\:loading\.delay\.long], [wire\:loading\.delay\.longer][wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest][wire\:loading\.delay\.longest] {display: none;}[wire\:offline][wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}:root {--livewire-progress-bar-color: #2299dd;}[x-cloak] {display: none !important;}</style>
+</head>
+    
+    <body>
+        <div wire:snapshot="{&quot;data&quot;:{&quot;email&quot;:null,&quot;password&quot;:null},&quot;memo&quot;:{&quot;id&quot;:&quot;dQ9h94FKlFXmmL2weZ80&quot;,&quot;name&quot;:&quot;login-component&quot;,&quot;path&quot;:&quot;login&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;en&quot;},&quot;checksum&quot;:&quot;0ba66b285f65c84cc14f0a802df2e21d7e3bc533d608bc8ec69e26d3985cf28e&quot;}" wire:effects="[]" wire:id="dQ9h94FKlFXmmL2weZ80" class="login-container">
+    <div class="login-header">
+        <img src="http://perpustakaan.test/assets/login.png" alt="Library Logo">
+        <h2>Perpustakaan</h2>
+    </div>
+    <form>
+        <div class="form-group">
+            <input type="text" wire:model="email" class="form-control" id="email" 
+                placeholder="Email Address">
+                <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+        </div>
+        <div class="form-group">
+            <input type="password" wire:model="password" class="form-control" id="password" 
+                placeholder="Password">
+                <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+        </div>
+        <button type="button" wire:click="proses" class="btn btn-primary btn-login">Login</button>
+    </form>
+    <div class="text-center">
+        <a href="#">Forgot password?</a>
+    </div>
+</div>
+    
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Livewire Scripts -->
+<script src="/livewire/livewire.js?id=02b08710"   data-csrf="H4mZVnkubPhA5KCZhoWW4EzUar0Jg5NGpTHQWHFQ" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+</body>
+    
+    </html>
+    </div>
+    
